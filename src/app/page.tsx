@@ -138,18 +138,18 @@ export default function Home() {
   return (
     <main className="h-full bg-[#f8fafc] dark:bg-[#1e1e2d] text-slate-900 dark:text-white flex flex-col transition-colors duration-300">
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-slate-200 dark:border-slate-700">
-        <div className="flex items-center gap-6">
+      <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between px-4 py-3 border-b border-slate-200 dark:border-slate-700 gap-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-6">
           <h1 className="text-lg font-medium">Projects</h1>
-          <span className="text-slate-600 dark:text-slate-400">Welcome back, Vincent 👋</span>
+          <span className="text-slate-600 dark:text-slate-400 text-sm">Welcome back, Vincent 👋</span>
         </div>
         
-        <div className="flex items-center gap-3">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 w-full lg:w-auto">
           <div className="flex items-center gap-2 bg-slate-100 dark:bg-[#1e293b] rounded-lg px-3 py-2">
-            <button className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition">
+            <button className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition text-sm">
               Board view
             </button>
-            <button className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition">
+            <button className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition text-sm">
               Add view
             </button>
           </div>
@@ -164,7 +164,7 @@ export default function Home() {
             <button className="p-2 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-[#1e293b] rounded transition">
               <ArrowUpDown className="h-4 w-4" />
             </button>
-            <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">
+            <button className="bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded-lg transition text-sm">
               + New template
             </button>
           </div>
@@ -173,7 +173,7 @@ export default function Home() {
 
       {/* Task Board */}
       <div className="flex-1 p-4">
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {/* To Do Column */}
           <div className="bg-white dark:bg-[#1e293b] rounded-lg p-3 border border-slate-200 dark:border-slate-700">
             <div className="flex items-center justify-between mb-3">
